@@ -11,6 +11,6 @@ for message in message_threads:
 	messages = messages + message.contents
 
 with open('input.txt', 'w') as fp:
-	json.dump(messages, fp)
+	json.dump('\n'.join(messages), fp)
 
 print("In total, " + str(len(messages)) + " threads.")
