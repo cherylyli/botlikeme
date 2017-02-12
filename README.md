@@ -7,4 +7,9 @@ Creating an AI bot trained from my facebook messages.
 
 3. Go to ```~/Library/Messages/Archive``` and run ```plutil -convert xml1 filename.ichat``` because I want to use my iMessages too. [Not completed]
 
-4. 
+4. Construct dictionary of words. For every sentence, add a [START] and [END] tag, then for each consecutive pair of words, note the frequency of the later word appearing if the previous word was written. 
+
+5. Spit out random words with a seed.
+
+TODOs:
+1. Get a distribution of lengths of sentences and use that to influence the length of generated sentences.

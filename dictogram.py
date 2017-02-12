@@ -3,6 +3,9 @@
 # Key: a word
 # Value: all the words that came after that word, with weights assigned to it
 
+# TODO:
+# 	count how many words in a sentence, use this to influence length of sentence
+
 import re
 
 class Dictogram:
@@ -15,9 +18,9 @@ class Dictogram:
 		else:
 			self.dictionary = {}
 
-
+			
 	def add_tokens(self, string):
-		"""
+    	"""
 		Given a string of words, insert start and end tokens,
 		parse into tokens, and put into the dictionary.
 		"""
